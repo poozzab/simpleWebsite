@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <style>
+        outer-most-container {
+            display: flex;
+            flex-direction: column;
+        };
+
+        video {
+            background: black;
+        };
+
+        @media only screen and (min-width: 601px) {
+            video-object-container {
+                flex-direction: row;
+            };
+        };
+
+        @media only screen and (max-width: 600px) {
+            video-object-container {
+                flex-direction: column;
+            };
+        };
+    </style>
+</head>
+<body>
+    <div class="outer-most-container">
+        <div class="title-object-container">
+            <span class="title">${title}</span>
+        </div>
+        <div class="video-object-container">
+            <div class="video">
+            </div>
+            <div class="video">
+            </div>
+            <div class="video">
+            </div>
+        </div>
+    </div>
+</body>
