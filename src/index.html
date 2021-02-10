@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <head>
     <style>
-        outer-most-container {
+        .outer-most-container {
             display: flex;
             flex-direction: column;
         };
 
-        video {
+        .video-object-container {
+            width: 100%;
+        }
+
+        .video-object {
+            margin-left: 20rem;
+            margin-right: 20rem;
+            width: 100px;
+            height: 100px;
             background: black;
         };
 
         @media only screen and (min-width: 601px) {
-            video-object-container {
+            .video-object-container {
                 flex-direction: row;
             };
         };
 
         @media only screen and (max-width: 600px) {
-            video-object-container {
+            .video-object-container {
                 flex-direction: column;
             };
         };
@@ -29,11 +37,11 @@
             <span class="title">${title}</span>
         </div>
         <div class="video-object-container">
-            <div class="video">
+            <div class="video-object">
             </div>
-            <div class="video">
+            <div class="video-object">
             </div>
-            <div class="video">
+            <div class="video-object">
             </div>
         </div>
     </div>
